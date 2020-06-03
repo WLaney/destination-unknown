@@ -19,17 +19,25 @@ With this very light tuning the follower shows poor behavior in the simulator. I
 ### Pre-reqs
 
 Install ROS Kinetic
+
 Install TurtleSim
 
 ### Set-Up
 Navigate to ~/catkin_ws/src/
+
 Create a package: `catkin_create_pkg laney_hw3 std_msgs rospy roscpp`
+
 replace `laney_hw3/src/` with the src directory in the repository
+
 move `launch/` from the repository into `laney_hw3/`
+
 Make files executable: `chmod +x laney_hw3/src/side_follower.py`
+
 Navigate to `~/catkin_ws/`
+
 Run `catkin_make`
 
 ### Run
 Run `source devel/setup.bash`
+
 roslaunch `laney_hw3 laney_hw3.launch`
